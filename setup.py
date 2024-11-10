@@ -14,7 +14,7 @@ inst_reqs = [
 
 setup(
     name="opengis",
-    version="2.2.1",
+    version="2.3",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
