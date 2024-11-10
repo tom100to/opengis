@@ -12,7 +12,10 @@ setup(
     install_requires=[
         "gdal",
         "pymodis", 
-        "numpy"
+        "numpy",
+        "xarray",
+        "rasterio",
+        "netCDF4"
     ],
     python_requires=">=3.10",
     classifiers=[
