@@ -8,13 +8,13 @@ inst_reqs = [
         "xarray",
         "rasterio",
         "netCDF4",
-        "gdal",
         "pymodis",
+        "GDAL >= 3.1.0",
 ]
 
 setup(
     name="opengis",
-    version="2.3",
+    version="2.4",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
