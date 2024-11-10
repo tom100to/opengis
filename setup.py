@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="opengis",
-    version="1.9.2",
+    version="1.9.6",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -25,7 +25,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Topic :: Scientific/Engineering :: GIS",
     ],
-    keywords="Geographic information systems Remote sensing Spatial analysis",
+    keywords="Geographic-information-systems Remote-sensing Spatial-analysis",
     project_urls={
         "Source": "https://github.com/tom100to/opengis",
         
