@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="opengis",
-    version="1.9.6",
+    version="2.0",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
