@@ -1,5 +1,7 @@
-This is an open source GIS package. There are many useful tools in it.
-1.NC文件批量转换TIF工具
+Open Source GIS Tools
+This repository provides several tools for GIS data processing, including batch conversion for NC and MODIS data formats.
+
+1. NC文件批量转换TIF工具
 
 ## 功能描述
 该工具用于批量将.nc（NetCDF）文件转换为GeoTIFF格式。主要功能包括：
