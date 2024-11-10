@@ -9,12 +9,12 @@ inst_reqs = [
         "rasterio",
         "netCDF4",
         "pymodis",
-        "GDAL >= 3.1.0",
+        "GDAL >= 3.0.0",
 ]
 
 setup(
     name="opengis",
-    version="2.4",
+    version="2.4.5",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -33,7 +33,7 @@ setup(
     ],
     keywords="Geographic-information-systems Remote-sensing Spatial-analysis",
     project_urls={
-        "Source": "https://github.com/tom100to/opengis",
-        
-    }
+        "source":"https://github.com/tom100to/opengis",
+        "tracker":"https://github.com/tom100to/opengis/issues"
+        }
 )
