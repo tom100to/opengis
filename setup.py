@@ -10,12 +10,13 @@ setup(
     author_email="773598627@qq.com",
     packages=find_packages(),
     install_requires=[
-        "gdal",
-        "pymodis", 
-        "numpy",
+        "numpy"
         "xarray",
         "rasterio",
-        "netCDF4"
+        "netCDF4",
+        "gdal",
+        "pymodis",
+        "matplotlab"
     ],
     python_requires=">=3.10",
     classifiers=[
