@@ -1,15 +1,8 @@
 from setuptools import setup, find_packages
 
-setup(
-    name="opengis",
-    version="2.0",
-    description="Open source GIS tools.",
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown",
-    author="Zijie Wang",
-    author_email="773598627@qq.com",
-    packages=find_packages(),
-    install_requires=[
+# Runtime requirements.
+# Runtime requirements.
+inst_reqs = [
         "numpy >= 1.17.0",
         "pandas >= 1.5.0",
         "scipy >= 1.9.0",
@@ -19,7 +12,20 @@ setup(
         "gdal",
         "pymodis",
         "matplotlib",
-    ],
+        "click>=4.0",
+        "cligj>=0.5",
+]
+
+setup(
+    name="opengis",
+    version="2.2.1",
+    description="Open source GIS tools.",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Zijie Wang",
+    author_email="773598627@qq.com",
+    packages=find_packages(),
+    install_requires=inst_reqs,
     python_requires=">=3.10",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
