@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
 
-# Runtime requirements.
-# Runtime requirements.
+# Runtime Requirements
 inst_reqs = [
         "numpy >= 1.17.0",
         "pandas >= 1.5.0",
@@ -11,9 +10,6 @@ inst_reqs = [
         "netCDF4",
         "gdal",
         "pymodis",
-        "matplotlib",
-        "click>=4.0",
-        "cligj>=0.5",
 ]
 
 setup(
