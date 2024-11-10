@@ -6,17 +6,19 @@ setup(
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="zijie wang",
+    author="Zijie Wang",
     author_email="773598627@qq.com",
     packages=find_packages(),
     install_requires=[
-        "numpy"
+        "numpy >= 1.17.0",
+        "pandas >= 1.5.0",
+        "scipy >= 1.9.0",
         "xarray",
         "rasterio",
         "netCDF4",
         "gdal",
         "pymodis",
-        "matplotlab"
+        "matplotlib",
     ],
     python_requires=">=3.10",
     classifiers=[
