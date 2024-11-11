@@ -12,7 +12,7 @@ inst_reqs = [
 
 setup(
     name="opengis",
-    version="2.6",
+    version="3.0.0",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -22,16 +22,16 @@ setup(
     install_requires=inst_reqs,
     python_requires=">=3.10",
     classifiers=[
-        "Development Status :: 5 - Production/Stable",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    keywords="Geographic-information-systems Remote-sensing Spatial-analysis",
+    keywords="GIS Remote-sensing",
     project_urls={
-        "source":"https://github.com/caaszj/opengis",
-        "tracker":"https://github.com/caaszj/opengis/issues"
+        "Source":"https://github.com/caaszj/opengis",
+        "Tracker":"https://github.com/caaszj/opengis/issues"
         }
 )
