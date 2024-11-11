@@ -31,7 +31,7 @@ setup(
     ],
     keywords="Geographic-information-systems Remote-sensing Spatial-analysis",
     project_urls={
-        "source":"https://github.com/tom100to/opengis",
-        "tracker":"https://github.com/tom100to/opengis/issues"
+        "source":"https://github.com/caaszj/opengis",
+        "tracker":"https://github.com/caaszj/opengis/issues"
         }
 )
