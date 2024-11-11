@@ -2,10 +2,8 @@ from setuptools import setup, find_packages
 
 # Runtime Requirements
 inst_reqs = [
-        "gdal"
-        "numpy >= 1.17.0",
-        "pandas >= 1.5.0",
-        "scipy >= 1.9.0",
+        "gdal",
+        "numpy",
         "xarray",
         "rasterio",
         "netCDF4",
@@ -14,7 +12,7 @@ inst_reqs = [
 
 setup(
     name="opengis",
-    version="2.4.5",
+    version="2.6",
     description="Open source GIS tools.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

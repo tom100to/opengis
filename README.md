@@ -1,3 +1,4 @@
-## Open Source GIS Tools
-
-This repository provides several tools for GIS data processing, including batch conversion for NC and MODIS data formats.
+## An open source GIS tool.
+Now implement the function:
+1. Batch reprojection
+2. Batch processing modis data
