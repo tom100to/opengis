@@ -1,6 +1,9 @@
 import os
 from osgeo import gdal
 
+# 启用异常处理
+gdal.UseExceptions()
+
 def batch_reproject(src_img_path, ref_img_path, output_dir, match_resolution=True, 
                    input_formats=('.tif','.tiff','.img','.dat','.hdf'),
                    output_format='GTiff'):
@@ -80,29 +83,3 @@ def batch_reproject(src_img_path, ref_img_path, output_dir, match_resolution=Tru
     
     ref_ds = None
     print("批量转投影完成!")
-
-# # 使用示例
-# if __name__ == "__main__":
-#     src_folder = r"D:\source_images"  # 源图像文件夹
-#     ref_image = r"D:\reference.tif"   # 参考图像
-#     out_folder = r"D:\output"         # 输出文件夹
-    
-#     # 基本用法：转换tif和img格式
-#     batch_reproject(src_folder, ref_image, out_folder)
-    
-#     # 自定义输入格式和输出格式
-#     # batch_reproject(
-#     #     src_folder, 
-#     #     ref_image, 
-#     #     out_folder,
-#     #     input_formats=('.img', '.tif', '.dat'),  # 指定输入格式
-#     #     output_format='HFA'  # 输出为Erdas Imagine格式
-#     # )
-    
-#     # 只转投影不改变分辨率
-#     # batch_reproject(
-#     #     src_folder, 
-#     #     ref_image, 
-#     #     out_folder, 
-#     #     match_resolution=False
-#     # )

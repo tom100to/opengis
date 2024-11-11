@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 
 # Runtime Requirements
 inst_reqs = [
+        "gdal"
         "numpy >= 1.17.0",
         "pandas >= 1.5.0",
         "scipy >= 1.9.0",
@@ -9,7 +10,6 @@ inst_reqs = [
         "rasterio",
         "netCDF4",
         "pymodis",
-        "GDAL >= 3.0.0",
 ]
 
 setup(
