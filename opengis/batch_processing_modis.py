@@ -122,18 +122,18 @@ def process_with_error_handling(input_dir, output_dir, target_epsg=None, selecte
         print(f"发生错误: {str(e)}")
         raise
 
-# # 使用示例
-input_directory = r"C:\Users\RS\Documents\WeChat Files\wangzijieq7\FileStorage\File\2024-11\New folder"
-output_directory = r"C:\Users\RS\Pictures\text"
+# 使用示例
+# input_directory = r"C:\Users\RS\Documents\WeChat Files\wangzijieq7\FileStorage\File\2024-11\New folder"
+# output_directory = r"C:\Users\RS\Pictures\text"
 
-# # 示例1：基本批量转换
-process_with_error_handling(input_directory, output_directory, selected_bands=[1])
+# 示例1：基本批量转换
+# process_with_error_handling(input_directory, output_directory, selected_bands=[1])
 
-# # 示例2：转换为UTM投影，设置分辨率为500米，并只处理特定波段
-# # process_with_error_handling(
-# #     input_directory, 
-# #     output_directory,
-# #     target_epsg=32649,
-# #     selected_bands=[1],
-# #     target_resolution=(500, 500)  # x方向和y方向的分辨率都设为500米
-# # )
+# 示例2：转换为UTM投影，设置分辨率为500米，并只处理特定波段
+# process_with_error_handling(
+#     input_directory, 
+#     output_directory,
+#     target_epsg=32649,
+#     selected_bands=[1],
+#     target_resolution=(500, 500)  # x方向和y方向的分辨率都设为500米
+# )

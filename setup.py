@@ -7,8 +7,8 @@ inst_reqs = [
 
 setup(
     name="opengis",
-    version="3.0.4",
-    description="Open source GIS tools.",
+    version="3.0.5",
+    description="An open source GIS tool.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Zijie Wang",
