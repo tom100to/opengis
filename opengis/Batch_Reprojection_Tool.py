@@ -4,7 +4,7 @@ from osgeo import gdal
 # 启用异常处理
 gdal.UseExceptions()
 
-def batch_reproject(src_img_path, ref_img_path, output_dir, match_resolution=True, 
+def batch_reprojection(src_img_path, ref_img_path, output_dir, match_resolution=True, 
                    input_formats=('.tif','.tiff','.img','.dat','.hdf'),
                    output_format='GTiff'):
     """
@@ -83,3 +83,42 @@ def batch_reproject(src_img_path, ref_img_path, output_dir, match_resolution=Tru
     
     ref_ds = None
     print("批量转投影完成!")
+
+# # 使用示例
+# src_folder = r"C:\Users\RS\Documents\WeChat Files\wangzijieq7\FileStorage\File\2024-11\MCD15_NM_20244_fill"  # 源图像文件夹
+# ref_image = r"G:\2024\2024-01-01\2024-01-01_Mosaic.tif"   # 参考图像
+# out_folder = r"C:\Users\RS\Pictures\test"         # 输出文件夹
+
+# # 转投影更改分辨率
+# batch_reprojection(
+#     src_folder, 
+#     ref_image, 
+#     out_folder
+# )
+
+# # 转投影不更改分辨率
+# batch_reprojection(
+#     src_folder, 
+#     ref_image, 
+#     out_folder, 
+#     match_resolution=False
+# )
+
+# # 自定义输入格式和输出格式，转投影更改分辨率
+# batch_reprojection(
+#     src_folder, 
+#     ref_image, 
+#     out_folder,
+#     input_formats=('.img', '.tif', '.dat'),  # 指定输入格式
+#     output_format='HFA'  # 指定输出格式
+# )
+
+# # 自定义输入格式和输出格式，转投影不更改分辨率
+# batch_reprojection(
+#     src_folder, 
+#     ref_image, 
+#     out_folder,
+#     match_resolution=False,
+#     input_formats=('.img'),  # 指定输入格式
+#     output_format='GTiff'    # 指定输出格式
+# )
