@@ -1,2 +1,2 @@
-from .batch_reprojection import batch_reproject
-from .batch_processing_modis import process_with_error_handling
+from .Batch_Reprojection_Tool import batch_reprojection
+from .MODIS_Reprojection_Tool import modis_batch_projection

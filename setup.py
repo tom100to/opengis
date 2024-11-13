@@ -7,7 +7,7 @@ dependencies = [
 
 setup(
     name="opengis",
-    version="3.0.6",
+    version="3.0.7",
     description="An open source GIS tool.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
