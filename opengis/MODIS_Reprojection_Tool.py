@@ -104,7 +104,7 @@ def modis_to_tif_batch(input_dir, output_dir, target_epsg=None, selected_bands=N
     
     print("所有文件处理完成！")
 
-def process_with_error_handling(input_dir, output_dir, target_epsg=None, selected_bands=None, 
+def modis_batch_projection(input_dir, output_dir, target_epsg=None, selected_bands=None, 
                               target_resolution=None):
     """
     带有错误处理的处理函数封装
@@ -124,13 +124,13 @@ def process_with_error_handling(input_dir, output_dir, target_epsg=None, selecte
 
 # 使用示例
 # input_directory = r"C:\Users\RS\Documents\WeChat Files\wangzijieq7\FileStorage\File\2024-11\New folder"
-# output_directory = r"C:\Users\RS\Pictures\text"
+# output_directory = r"C:\Users\RS\Pictures\test"
 
 # 示例1：基本批量转换
-# process_with_error_handling(input_directory, output_directory, selected_bands=[1])
+# modis_batch_projection(input_directory, output_directory, selected_bands=[1])
 
 # 示例2：转换为UTM投影，设置分辨率为500米，并只处理特定波段
-# process_with_error_handling(
+# modis_batch_projection(
 #     input_directory, 
 #     output_directory,
 #     target_epsg=32649,
